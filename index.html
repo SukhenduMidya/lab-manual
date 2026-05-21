@@ -11,7 +11,7 @@
             margin:0;
             font-family:Arial;
             background:linear-gradient(135deg,#5b7cfa,#7c4dff);
-            height:100vh;
+            min-height:100vh;
             display:flex;
             justify-content:center;
             align-items:center;
@@ -22,11 +22,13 @@
             padding:50px;
             border-radius:20px;
             text-align:center;
-            width:350px;
+            width:400px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
         }
 
         h1{
             margin-bottom:30px;
+            color:#222;
         }
 
         .btn{
@@ -39,6 +41,12 @@
             border-radius:10px;
             font-size:20px;
             font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#22d3ee;
+            transform:scale(1.03);
         }
 
     </style>
@@ -49,10 +57,14 @@
 
     <div class="box">
 
-        <h1>📘 Lab Manual</h1>
+        <h1>📘 Lab Manuals</h1>
 
-        <a class="btn" href="oops_manual.pdf" target="_blank">
-            OOPS Manual
+        <a class="btn" href="oops_manual.pdf" download>
+            💻 OOPS Manual
+        </a>
+
+        <a class="btn" href="os_manual.pdf" download>
+            🖥️ Operating Systems Manual
         </a>
 
     </div>
